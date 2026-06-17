@@ -1,5 +1,4 @@
 # Cache files, generates by Zephir
-actions-runner/
 .temp/
 .libs/
 

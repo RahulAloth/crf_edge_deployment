@@ -1,0 +1,15 @@
+name: Local CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-test-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test runner
+        run: echo "Runner is working on $(hostname)"

@@ -13,9 +13,12 @@ jobs:
 
       - name: Clone COSMoS repo into ecosystem
         run: |
-          rm -rf cosmos
-          git clone https://github.com/RahulAloth/COSMoS.git cosmos
-
+           rm -rf cosmos
+           git clone https://github.com/RahulAloth/COSMoS.git cosmos
+           echo "=== After clone ==="
+           ls -la
+           echo "=== Inside cosmos ==="
+           ls -la cosmos
       - name: Build
         run: ./scripts/build.sh
 

@@ -1,7 +1,8 @@
 #!/bin/bash
-echo "Deploying..."
-echo "Deployment Testing!"
-echo "Deployment complete!"
+set -e
 
+echo "=== Running deploy ==="
+echo "Working directory: $(pwd)"
 
+# Your deploy logic here
 

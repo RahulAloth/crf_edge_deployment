@@ -4,6 +4,9 @@ set -e
 echo "=== Local CI Started ==="
 echo "Working directory: $(pwd)"
 
+echo "=== Downloading CDISC Files ==="
+./download_cdisc.sh
+
 echo "=== Cloning COSMoS ==="
 rm -rf cosmos
 git clone https://github.com/RahulAloth/COSMoS.git cosmos

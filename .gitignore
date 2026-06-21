@@ -3,6 +3,9 @@ actions-runner/
 .temp/
 .libs/
 
+# Ignore COSMoS clone
+cosmos/
+
 # Object files, generates by linker
 *.lo
 *.la
